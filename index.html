@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Control UI</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body><input type="checkbox" id="darkmode">
+
+
+    <div class="mobile">
+      <input type="radio" name="pages" id="page-1">
+      <input type="radio" name="pages" id="page-2">
+    
+      <div class="page_1">
+      <div class="top">
+        <i class="fas fa-bars"></i>
+    <label id="darklabel" for="darkmode">
+    <i class="fa fa-moon" id="dark-mode" aria-hidden="true"></i>
+      </label>
+        <i class="fas fa-user"></i>
+      </div>
+    <div class="middle">
+      <div class="hg">
+        <h2 >Good Morning <span>:)<span></h2>
+      </div>
+              <input type="radio" id="" name="weather" checked>
+           <input type="radio" id="info_2" name="weather" >
+                <input type="radio" id="info_3" name="weather">
+      <div class="weather-info">
+    
+        <div class="details">
+        <div class="w-detail">
+      <i class="fas fa-cloud-sun-rain"></i>
+      <h5>Weather</h4>    
+        </div>
+         <div class="w-detail">
+           <h2>21°C</h2>
+             <h5>Heat</h5> 
+         </div>
+         <div class="w-detail">
+           <h2>94%</h2>
+             <h5>Moisture</h5>
+         </div>
+          </div>      
+
+       </div>
+      <div class="cells">
+        <label for="info_1">
+         <h4>Sat</h4>
+     </label>
+        <label for="info_2">
+          <h4>Sun</h4>
+          </label>
+        <label for="info_3">
+         <h4>Mon</h4>
+          </label>
+       </div>
+          <div class="devices">
+            <div class="d-master">
+            <h3>4 Devices Connected</h3>
+             <i class="fa fa-info-circle"  aria-hidden="true"></i>
+    
+       </div>
+       <div class="device">
+         <input type="checkbox" id="c1">
+         <label id="cc1" for="c1">
+        <div  class="c1" >
+         <img  src="img/lamp.webp">
+          <h4 >Lamp</h4>
+         <span class="on"></span> <h6 id=""></h6>
+          </div>
+           </label>
+     <input type="checkbox" id="c2">
+      <label id="cc2" for="c2">   
+         <div class="c1">
+         <img src="img/tv.webp">
+          <h4>TV</h4>
+          <span class="on2"></span><h6></h6>
+          </div>
+        </label>
+       </div>
+            <div class="device device-2">
+            <input type="checkbox" id="c3">
+      <label id="cc3" for="c3">    
+        <div class="c1">
+         <img   src="img/fan.webp">
+          <h4>A.C</h4>
+          <span class="on"></span><h6></h6>
+          </div>
+              </label>
+          <input type="checkbox" id="c4">
+      <label id="cc4" for="c4">
+         <div class="c1">
+         <img src="img/wifi.webp">
+          <h4>Wi-Fi</h4>
+       <span class="off"></span>   <h6></h6>
+          </div>
+              </label>
+       </div>
+            </div>
+         <div class="add-device">
+             <input type="checkbox" id="check">
+            <label id="add" for="check">    
+            <i class="fas fa-plus-circle"></i>
+             <h3></h3>
+                </label>
+         </div>
+    </div>
+        <div class="menu">
+        <i class="fa fa-home" aria-hidden="true"></i>
+          <label for="page-2">
+      <i class="fas fa-tachometer-alt"></i></label>
+     <i class="fas fa-chart-bar"></i>
+        <i class="fas fa-cog"></i>
+      </div>
+    </div>
+      <input type="radio" name="pages" id="page-1">
+     
+    <div class="page_2">
+    <div class="top">
+      <label for="page-1"> <i class="fas fa-chevron-left"></i>
+      <i>
+        </label>
+    <label id="darklabel" for="darkmode">
+      Good Morning
+      </label></i>
+     <i class="fas fa-align-right"></i>
+      </div>
+    <div class="middle">
+      <div class="hg">
+        <h2>Climate Control</h2>
+      </div>
+      <input type="checkbox" id="cover"> 
+      <div class="chart">
+        <div class="back">
+           <div class="front">
+            <div><i class="fas fa-thermometer-quarter"></i>
+             <h2>23°c</h2>
+             </div>
+              <h4>Cold</h4>
+           </div>
+        </div>
+      </div>
+      <div class="buttons" style="display:flex;">
+     <div class="btn">
+       <button>-</butto>
+       </div>
+        <div class="btn-2">
+                     
+      <label id="cover-label" for="cover">
+     <i  class="fa fa-power-off" aria-hidden="true"></i>
+     </label>   
+    </div>
+    
+        
+        <div class="btn">
+       <button>+</button>
+     </div>
+        </div>
+    <div class="modes">
+      <div class="mode">
+        <h3>Mode</h3>
+      </div>
+      <div class="control">
+        <input name="mod"  type="radio" id="cold" checked>
+        <label for="cold">
+        <div class="mod"><i class="fas fa-snowflake"></i>
+          <h3>Cold</h3>
+        </div>
+      </label>
+        <input name="mod" type="radio" id="hot">
+        <label for="hot">
+          <div class="mod"><i class="fas fa-fire"></i>
+          <h3>Hot</h3>
+        </div>
+    </label>
+        <input name="mod" type="radio" id="fan">
+        <label for="fan">
+          <div class="mod"><i class="fas fa-fan"></i>
+          <h3>Fan</h3>
+        </div>
+        </label>
+        <input name="mod" type="radio" id="auto">
+        <label for="auto">
+          <div class="mod"><i class="fas fa-sync"></i>
+          <h3>Auto</h3>
+        </div>
+        </label>
+        <input name="mod" type="radio" id="warm">
+        <label for="warm">
+          <div class="mod"><i class="fas fa-tint"></i>
+          <h3>Warm</h3>
+        </div> 
+     </label>
+          </div>
+    </div>
+    </div>
+       <div class="menu">
+         <label for="page-1">
+        <i class="fa fa-home" aria-hidden="true"></i></label>
+      <i class="fas fa-tachometer-alt"></i>
+     <i class="fas fa-chart-bar"></i>
+        <i class="fas fa-cog"></i>
+      </div>
+    </div>
+      </div>
+  </body>
+</html>
