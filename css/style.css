@@ -246,8 +246,7 @@ h3 {
 }
 #cc1 .c1 h6:before,
 #cc2 .c1 h6:before,
-#cc3 .c1 h6:before,
-#cc4 .c1 h6:before {
+#cc3 .c1 h6:before{
   content: "ON";
 }
 
@@ -261,15 +260,13 @@ h3 {
 
 #c1:checked + #cc1 .c1 span,
 #c2:checked + #cc2 .c1 span,
-#c3:checked + #cc3 .c1 span,
-#c4:checked + #cc4 .c1 span {
+#c3:checked + #cc3 .c1 span{
   background: red;
 }
 
 #c1:checked + #cc1 .c1 h6:before,
 #c2:checked + #cc2 .c1 h6:before,
-#c3:checked + #cc3 .c1 h6:before,
-#c4:checked + #cc4 .c1 h6:before {
+#c3:checked + #cc3 .c1 h6:before{
   content: "OFF";
 }
 
@@ -294,6 +291,9 @@ h3 {
   content: "ON";
 }
 
+#c4:checked + #cc4 .c1 span {
+  background: var(--sky);
+}
 
 /* Page 2 */
 
