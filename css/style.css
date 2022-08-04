@@ -1,3 +1,8 @@
+/* Global */
+:root {
+  --sky: #23bba6;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,18 +14,13 @@
   outline: 0;
   list-style: none;
 }
-#darkmode {
-  visibility: hidden;
-  opacity: 0;
-}
+
 html,
 body {
   width: 100%;
   height: 100%;
 }
-:root {
-  --sky: #23bba6;
-}
+
 body {
   font-family: sans-serif;
   height: 100%;
@@ -30,43 +30,18 @@ body {
   justify-content: center;
 }
 
-#page-2:checked + .page_1 {
-  transform: translateX(-360px);
+i {
+  font-size: 23px;
+  padding: 25px;
+  cursor: pointer;
   transition: 0.5s all;
 }
-#page-2:checked + .page_1 + #page-1 + .page_2 {
-  transform: translateX(-360px);
-  transition: 0.5s all;
-}
-#page-1:checked + #page-2 + .page_1 {
-  transform: translateX(0px);
+i:hover {
+  color: #474a49;
   transition: 0.5s all;
 }
 
-#darkmode:checked + .mobile {
-  background: #222;
-}
-#darkmode:checked,
-#darkmode:checked + .mobile .top i,
-#darkmode:checked + .mobile .middle .hg h2,
-#darkmode:checked + .mobile .middle .hg h2 span,
-#darkmode:checked + .mobile .middle .weather-info .details .w-detail,
-#darkmode:checked + .mobile .middle .cells label h4,
-#darkmode:checked + .mobile .middle .devices .d-master,
-#darkmode:checked + .mobile .menu i {
-  color: white;
-}
-
-#darkmode:checked + .mobile .middle .weather-info .details .w-detail i,
-#darkmode:checked + .mobile .middle .weather-info .details .w-detail h2,
-#darkmode:checked + .mobile .middle .weather-info .details .w-detail h5 {
-  color: var(--sky);
-}
-
-#darkmode:checked + .mobile .middle .devices .device .c1 img {
-  color: white;
-  background: #fff;
-}
+/* Mobile */
 
 .mobile {
   width: 360px;
@@ -83,21 +58,32 @@ body {
 .page_2 {
   width: 360px;
 }
+
+/* Pages */
+
+#darkmode {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#page-2:checked + .page_1 {
+  transform: translateX(-360px);
+  transition: 0.5s all;
+}
+#page-2:checked + .page_1 + #page-1 + .page_2 {
+  transform: translateX(-360px);
+  transition: 0.5s all;
+}
+#page-1:checked + #page-2 + .page_1 {
+  transform: translateX(0px);
+  transition: 0.5s all;
+}
+
 .menu {
   position: absolute;
   bottom: 10px;
   width: 100%;
   text-align: center;
-}
-i {
-  font-size: 23px;
-  padding: 25px;
-  cursor: pointer;
-  transition: 0.5s all;
-}
-i:hover {
-  color: #474a49;
-  transition: 0.5s all;
 }
 .top {
   width: 100%;
@@ -111,6 +97,9 @@ i:hover {
 .middle .hg h2 span {
   color: #1b2d39;
 }
+
+/* Weather Info */
+
 .middle .weather-info {
   width: auto;
   display: flex;
@@ -141,6 +130,9 @@ i:hover {
   text-align: center;
   font-weight: 700;
 }
+
+/* Cells */
+
 .middle .cells {
   display: flex;
   width: 100%;
@@ -153,6 +145,8 @@ h4:first-child {
   position: relative;
   cursor: pointer;
 }
+
+/* Devices */
 
 .middle .devices {
   padding: 5px 15px;
@@ -235,100 +229,9 @@ h3 {
 .middle .add-device #check:checked + #add h3:before {
   content: "Why Not If You Buy Premium :D";
 }
+
 #add {
   text-align: center;
-}
-
-.middle #info_1,
-#info_2,
-#info_3 {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: -9999999px;
-}
-.middle
-  #info_1:checked
-  + #info_2
-  + #info_3
-  + .weather-info
-  + .cells
-  label:first-child
-  h4 {
-  color: var(--sky);
-  transition: 0.5s all;
-}
-.middle
-  #info_1:checked
-  + #info_2
-  + #info_3
-  + .weather-info
-  + .cells
-  label:first-child
-  h4:before {
-  content: "";
-  transition: 0.5s all;
-  width: 20px;
-  height: 5px;
-  bottom: 2px;
-  border-radius: 130px;
-  position: absolute;
-  background: var(--sky);
-}
-
-.middle
-  #info_2:checked
-  + #info_3
-  + .weather-info
-  + .cells
-  label:nth-child(2)
-  h4 {
-  color: var(--sky);
-  transition: 0.5s all;
-}
-.middle
-  #info_2:checked
-  + #info_3
-  + .weather-info
-  + .cells
-  label:nth-child(2)
-  h4:before {
-  content: "";
-  width: 20px;
-  transition: 0.5s all;
-  height: 5px;
-  bottom: 2px;
-  border-radius: 130px;
-  position: absolute;
-  background: var(--sky);
-}
-
-.middle #info_3:checked + .weather-info + .cells label:last-child h4 {
-  color: var(--sky);
-  transition: 0.5s all;
-}
-.middle #info_3:checked + .weather-info + .cells label:last-child h4:before {
-  content: "";
-  width: 20px;
-  transition: 0.5s all;
-  height: 5px;
-  bottom: 2px;
-  border-radius: 130px;
-  position: absolute;
-  background: var(--sky);
-}
-
-.middle #info_1:checked + #info_2 + #info_3 + .weather-info {
-  margin-left: 1% !important;
-  transition: 2s all;
-}
-.middle #info_2:checked + #info_3 + .weather-info {
-  margin-left: -100% !important;
-  transition: 2s all;
-}
-.middle #info_3:checked + .weather-info {
-  margin-left: -200% !important;
-  transition: 2s all;
 }
 
 #c1 {
@@ -341,13 +244,16 @@ h3 {
 #cc1 .c1 h6:before {
   content: "ON";
 }
+
 #c1:checked + #cc1 .c1 {
   box-shadow: inset 0 0 16px #000;
   opacity: 0.5;
 }
+
 #c1:checked + #cc1 .c1 span {
   background: red;
 }
+
 #c1:checked + #cc1 .c1 h6:before {
   content: "OFF";
 }
@@ -429,14 +335,25 @@ h3 {
   content: "ON";
 }
 
+/* Page 2 */
+
 .page_2 .middle .hg h2 {
   padding-bottom: 50px;
 }
+
+.change-mod {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Chart */
+
 .page_2 .middle .chart {
   width: 100%;
   display: flex;
   justify-content: center;
 }
+
 .page_2 .middle .chart .back {
   width: 200px;
   height: 200px;
@@ -466,6 +383,9 @@ h3 {
   padding: 10px;
   padding-top: 7px;
 }
+
+/* Buttons */
+
 .page_2 .middle .btn {
   float: left;
   width: 33.3%;
@@ -500,6 +420,8 @@ h3 {
   padding: 0;
   color: var(--sky);
 }
+
+/* Modes */
 .page_2 .middle .modes .mode h3 {
   color: #000;
 }
@@ -541,6 +463,7 @@ input[type="radio"] {
   top: -9999px;
   z-index: -999;
 }
+
 #cover {
   visibility: hidden;
   opacity: 0;
@@ -603,4 +526,31 @@ input[type="radio"] {
 .modes {
   width: 105%;
   margin: 0;
+}
+
+/* Dark Mode */
+
+#darkmode:checked + .mobile {
+  background: #222;
+}
+#darkmode:checked,
+#darkmode:checked + .mobile .top i,
+#darkmode:checked + .mobile .middle .hg h2,
+#darkmode:checked + .mobile .middle .hg h2 span,
+#darkmode:checked + .mobile .middle .weather-info .details .w-detail,
+#darkmode:checked + .mobile .middle .cells label h4,
+#darkmode:checked + .mobile .middle .devices .d-master,
+#darkmode:checked + .mobile .menu i {
+  color: white;
+}
+
+#darkmode:checked + .mobile .middle .weather-info .details .w-detail i,
+#darkmode:checked + .mobile .middle .weather-info .details .w-detail h2,
+#darkmode:checked + .mobile .middle .weather-info .details .w-detail h5 {
+  color: var(--sky);
+}
+
+#darkmode:checked + .mobile .middle .devices .device .c1 img {
+  color: white;
+  background: #fff;
 }
