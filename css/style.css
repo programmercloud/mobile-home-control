@@ -91,7 +91,7 @@ i:hover {
   justify-content: space-between;
 }
 .middle {
-  padding: 25px;
+  padding: 28px;
   padding-top: 0;
 }
 .middle .hg h2 span {
@@ -453,7 +453,7 @@ h3 {
   width: 112%;
 }
 .page_2 .middle {
-  width: 113%;
+  width: 125%;
 }
 
 input[type="radio"] {
