@@ -286,6 +286,15 @@ h3 {
   animation: none;
 }
 
+#cc4 .c1 h6:before {
+  content: "OFF";
+}
+
+#c4:checked + #cc4 .c1 h6:before {
+  content: "ON";
+}
+
+
 /* Page 2 */
 
 .page_2 .middle .hg h2 {
