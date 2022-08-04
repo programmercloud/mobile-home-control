@@ -1,4 +1,5 @@
 /* Global */
+
 :root {
   --sky: #23bba6;
 }
@@ -12,7 +13,7 @@
   text-decoration: none;
   border: 0;
   outline: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 html,
@@ -36,6 +37,7 @@ i {
   cursor: pointer;
   transition: 0.5s all;
 }
+
 i:hover {
   color: #474a49;
   transition: 0.5s all;
@@ -54,6 +56,7 @@ i:hover {
   background: #f5f6f8;
   position: relative;
 }
+
 .mobile .page_1,
 .page_2 {
   width: 360px;
@@ -70,10 +73,12 @@ i:hover {
   transform: translateX(-360px);
   transition: 0.5s all;
 }
+
 #page-2:checked + .page_1 + #page-1 + .page_2 {
   transform: translateX(-360px);
-  transition: 0.5s all;
+  transition: all 0.5s;
 }
+
 #page-1:checked + #page-2 + .page_1 {
   transform: translateX(0px);
   transition: 0.5s all;
@@ -85,15 +90,18 @@ i:hover {
   width: 100%;
   text-align: center;
 }
+
 .top {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
+
 .middle {
   padding: 28px;
   padding-top: 0;
 }
+
 .middle .hg h2 span {
   color: #1b2d39;
 }
@@ -106,32 +114,37 @@ i:hover {
   overflow: hidden;
   align-items: center;
 }
+
 .middle .weather-info .details {
   width: 100%;
   display: flex;
   align-items: center;
 }
+
 .middle .weather-info .w-detail {
   width: 33.3%;
 }
-.middle .weather-info .w-detail i {
-  text-align: center;
-  color: #235172;
-  font-size: 36px;
-}
+
 .middle .weather-info .w-detail h2 {
   text-align: center;
   font-size: 26px;
   color: #235172;
   padding: 25px;
 }
+
+.middle .weather-info .w-detail i {
+  text-align: center;
+  color: #235172;
+  font-size: 36px;
+}
+
 .middle .weather-info .w-detail h5 {
   font-size: 15px;
   text-align: center;
   font-weight: 700;
 }
 
-/* Cells */
+/* cells */
 
 .middle .cells {
   display: flex;
@@ -139,6 +152,7 @@ i:hover {
   justify-content: center;
   text-transform: uppercase;
 }
+
 .middle .cells h4,
 h4:first-child {
   padding: 15px;
@@ -151,33 +165,40 @@ h4:first-child {
 .middle .devices {
   padding: 5px 15px;
 }
+
 .middle .devices .d-master {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
+
 .middle .devices .device {
   position: relative;
   display: flex;
   justify-content: center;
 }
+
 .middle .devices .device .c1 {
   padding-top: 0;
   background: #fff;
   cursor: pointer;
   border-radius: 30px;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
   margin: 10px;
   text-align: center;
   padding: 10px 24px;
   transition: 0.5s all;
   overflow: hidden;
 }
+
 .middle .devices .device .c1:hover {
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.9);
   transition: 0.5s all;
 }
-.middle .devices .device .c1 .on {
+
+.middle .devices .device .c1 .on,
+.middle .devices .device .c1 .off,
+.middle .devices .device .c1 .on2 {
   width: 10px;
   height: 10px;
   position: absolute;
@@ -187,26 +208,16 @@ h4:first-child {
   left: 16%;
   bottom: 22px;
 }
+
 .middle .devices .device .c1 .off {
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  border: 1px solid;
+  left: 65%;
   background: red;
-  border-radius: 50%;
-  left: 65%;
-  bottom: 22px;
 }
+
 .middle .devices .device .c1 .on2 {
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  border: 1px solid;
-  background: var(--sky);
-  border-radius: 50%;
   left: 65%;
-  bottom: 22px;
 }
+
 .middle .add-device {
   display: flex;
   flex-direction: column;
