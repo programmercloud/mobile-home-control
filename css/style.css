@@ -196,9 +196,9 @@ h4:first-child {
   transition: 0.5s all;
 }
 
-.middle .devices .device .c1 .on,
-.middle .devices .device .c1 .off,
-.middle .devices .device .c1 .on2 {
+.middle .devices .device .on,
+.middle .devices .device .off,
+.middle .devices .device .on2 {
   width: 10px;
   height: 10px;
   position: absolute;
@@ -209,12 +209,12 @@ h4:first-child {
   bottom: 22px;
 }
 
-.middle .devices .device .c1 .off {
+.middle .devices .device .off {
   left: 65%;
   background: red;
 }
 
-.middle .devices .device .c1 .on2 {
+.middle .devices .device .on2 {
   left: 65%;
 }
 
@@ -223,21 +223,25 @@ h4:first-child {
   flex-direction: column;
   align-items: center;
 }
+
 .middle .add-device #check {
   visibility: hidden;
   opacity: 0;
   position: absolute;
   z-index: -999;
 }
+
 .middle .add-device i,
 h3 {
   padding: 3px;
   color: var(--sky);
 }
-.middle .add-device h3:before {
+
+.middle .add-device h3::before {
   content: "Add Device";
 }
-.middle .add-device #check:checked + #add h3:before {
+
+.middle .add-device #check:checked + #add h3::before {
   content: "Why Not If You Buy Premium :D";
 }
 
@@ -251,13 +255,13 @@ h3 {
 #c4 {
   visibility: hidden;
   opacity: 0;
-  z-index: -99999;
-  position: absolute;
-  top: -100000px;
+  z-index: -9999;
+  top: -10000px;
 }
-#cc1 .c1 h6:before,
-#cc2 .c1 h6:before,
-#cc3 .c1 h6:before {
+
+#cc1 .c1 h6::before,
+#cc2 .c1 h6::before,
+#cc3 .c1 h6::before {
   content: "ON";
 }
 
@@ -275,15 +279,16 @@ h3 {
   background: red;
 }
 
-#c1:checked + #cc1 .c1 h6:before,
-#c2:checked + #cc2 .c1 h6:before,
-#c3:checked + #cc3 .c1 h6:before {
+#c1:checked + #cc1 .c1 h6::before,
+#c2:checked + #cc2 .c1 h6::before,
+#c3:checked + #cc3 .c1 h6::before {
   content: "OFF";
 }
 
 #cc3 .c1 img {
   animation: don 2s infinite linear;
 }
+
 @keyframes don {
   100% {
     transform: rotate(360deg);
@@ -294,12 +299,8 @@ h3 {
   animation: none;
 }
 
-#cc4 .c1 h6:before {
+#cc4 .c1 h6::before {
   content: "OFF";
-}
-
-#c4:checked + #cc4 .c1 h6:before {
-  content: "ON";
 }
 
 #c4:checked + #cc4 .c1 span {
@@ -311,7 +312,12 @@ h3 {
   opacity: 1;
 }
 
+#c4:checked + #cc4 .c1 h6::before {
+  content: "ON";
+}
+
 /* Page 2 */
+
 .page_2 .middle .hg h2 {
   padding-bottom: 50px;
 }
@@ -340,6 +346,7 @@ h3 {
   box-shadow: 5px 8px 80px rgba(35, 187, 166, 0.2),
     inset 5px 8px 80px rgba(35, 187, 166, 0.2);
 }
+
 .page_2 .middle .chart .back .front {
   width: 150px;
   height: 150px;
@@ -351,9 +358,11 @@ h3 {
   border-radius: 50%;
   background: #fff;
 }
+
 .page_2 .middle .chart .back .front div {
   display: flex;
 }
+
 .page_2 .middle .chart .back .front i {
   padding: 10px;
   padding-top: 7px;
@@ -368,6 +377,7 @@ h3 {
   padding: 45px 0;
   padding-bottom: 0;
 }
+
 .page_2 .middle .btn button {
   padding: 1px 30px;
   background: #fff;
@@ -377,12 +387,14 @@ h3 {
   font-size: 25px;
   border-radius: 130px;
 }
+
 .page_2 .middle .btn-2 {
   float: left;
   width: 33.3%;
   text-align: center;
   padding-top: 50px;
 }
+
 .page_2 .middle .btn-2 label {
   cursor: pointer;
   background: #fff;
@@ -391,21 +403,25 @@ h3 {
   padding: 20px;
   border-radius: 50%;
 }
+
 .page_2 .middle .btn-2 label i {
   padding: 0;
   color: var(--sky);
 }
 
 /* Modes */
+
 .page_2 .middle .modes .mode h3 {
   color: #000;
 }
+
 .page_2 .middle .modes .control {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
+
 .page_2 .middle .modes .mod {
   cursor: pointer;
   background: #fff;
@@ -416,42 +432,44 @@ h3 {
   box-shadow: 3px 4px 16px rgba(0, 0, 0, 0.5);
   margin: 11px;
 }
+
 .page_2 .middle .modes .mod i {
   padding: 0;
   padding-top: 15px;
 }
+
 .page_2 .middle .modes .mod h3 {
   color: #000;
 }
+
 .page_2 .top,
 .menu {
   width: 112%;
 }
+
 .page_2 .middle {
-  width: 125%;
+  width: 115%;
 }
 
-input[type="radio"] {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  top: -9999px;
-  z-index: -999;
-}
-
+input[type="radio"],
 #cover {
   visibility: hidden;
   opacity: 0;
   position: absolute;
   top: -999px;
-  z-index: -999;
+  z-index: -9999;
 }
+
 #cover:checked + .chart .back {
   animation: don 5s infinite linear;
 }
+
 #cover:checked + .chart + .buttons .btn-2 #cover-label {
   background: var(--sky);
 }
+
+/* Dark */
+
 #cover:checked + .chart + .buttons .btn-2 #cover-label i,
 #cold:checked + label .mod i,
 #cold:checked + label .mod h3,
@@ -464,6 +482,7 @@ input[type="radio"] {
 #darkmode:checked + .mobile .page_2 .middle .modes .mode h3 {
   color: #fff;
 }
+
 #cold:checked + label .mod {
   transform: scale(1.1);
   background: #03a9f4;
@@ -474,11 +493,6 @@ input[type="radio"] {
   background: #ff5722;
 }
 
-#hot:checked + label .mod {
-  transform: scale(1.1);
-  background: #f44336;
-}
-
 #fan:checked + label .mod {
   transform: scale(1.1);
   background: #795548;
@@ -486,16 +500,12 @@ input[type="radio"] {
 
 #auto:checked + label .mod {
   transform: scale(1.1);
-  background: #4caf50;
+  background: #4c1f50;
 }
 
 #warm:checked + label .mod {
   transform: scale(1.1);
   background: #ffeb3b;
-}
-#warm:checked + label .mod i,
-#warm:checked + label .mod h3 {
-  color: #000;
 }
 
 .modes {
@@ -503,11 +513,6 @@ input[type="radio"] {
   margin: 0;
 }
 
-/* Dark Mode */
-
-#darkmode:checked + .mobile {
-  background: #222;
-}
 #darkmode:checked,
 #darkmode:checked + .mobile .top i,
 #darkmode:checked + .mobile .middle .hg h2,
@@ -516,7 +521,7 @@ input[type="radio"] {
 #darkmode:checked + .mobile .middle .cells label h4,
 #darkmode:checked + .mobile .middle .devices .d-master,
 #darkmode:checked + .mobile .menu i {
-  color: white;
+  color: #fff;
 }
 
 #darkmode:checked + .mobile .middle .weather-info .details .w-detail i,
@@ -525,7 +530,11 @@ input[type="radio"] {
   color: var(--sky);
 }
 
-#darkmode:checked + .mobile .middle .devices .device .c1 img {
+#darkmode:checked + .mobile .middle .devices .device .c img {
   color: white;
   background: #fff;
+}
+
+#darkmode:checked + .mobile {
+  background: #222;
 }
