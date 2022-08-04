@@ -13,263 +13,276 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>  
-  <input type="checkbox" id="darkmode">
-    
-  <div class="mobile">
-      
-    <input type="radio" name="pages" id="page-1">
-    <input type="radio" name="pages" id="page-2">
-
-    <!-- Page 1 -->
-    <div class="page_1">
+  <body>
+    <input type="checkbox" id="darkmode" />
+    <div class="mobile">
+      <input type="radio" name="pages" id="page-1" />
+      <input type="radio" name="pages" id="page-2" />
+      <!-- Page 1 -->
+      <div class="page_1">
         <!-- Top -->
-      <div class="top">
-        <i class="fas fa-bars"></i>
-        <label id="darklabel" for="darkmode">
-         <i class="fa fa-moon" id="dark-mode" aria-hidden="true"></i>
-        </label>
-         <i class="fas fa-user"></i>
-      </div>
-      <!-- /Top -->
-
-      <!-- Middle -->
-    <div class="middle">
-
-      <div class="hg">
-        <h2 >Good Morning <span>:)<span></h2>
-      </div>
-
-      <input type="radio" id="info_1" >
-      <input type="radio" id="info_2" >
-      <input type="radio" id="info_3">
-
-       <!-- Waether Info -->
-      <div class="weather-info">
-        
-        <div class="details">
-
-            <div class="w-detail">
-              <i class="fas fa-cloud-sun-rain"></i>
-               <h5>Weather</h4>    
-            </div>
-
-            <div class="w-detail">
-               <h2>21°C</h2>
-               <h5>Heat</h5> 
-            </div>
-
-            <div class="w-detail">
-               <h2>94%</h2>
-               <h5>Moisture</h5>
-            </div>
-
-        </div>   
-
-      </div>
-      <!-- /Weather Info -->
-
-      <!-- Cells -->
-      <div class="cells">
-        <label for="info_1">
-         <h4>Sat</h4>
-        </label>
-        <label for="info_2">
-          <h4>Sun</h4>
+        <div class="top">
+          <i class="fas fa-bars"></i>
+          <label for="darkmode" id="darklabel">
+            <i class="fa fa-moon" id="dark-mode" aria-hidden="true"></i>
           </label>
-        <label for="info_3">
-          <h4>Mon</h4>
-          </label>
-      </div>
-
-      <!-- /Cells -->
-
-      <!-- Devices -->
-      <div class="devices">
-        <div class="d-master">
-          <h3>4 Devices Connected</h3>
-          <i class="fa fa-info-circle"  aria-hidden="true"></i>
+          <i class="fas fa-user"></i>
         </div>
+        <!-- Top -->
 
-       <div class="device">
-         <input type="checkbox" id="c1">
-         <label id="cc1" for="c1">
-            <div  class="c1" >
-              <img  src="img/lamp.webp">
-          <h4 >Lamp</h4>
-         <span class="on"></span> <h6 id=""></h6>
-             </div>
-           </label>
-
-
-     <input type="checkbox" id="c2">
-      <label id="cc2" for="c2">   
-         <div class="c1">
-         <img src="img/tv.webp">
-          <h4>TV</h4>
-          <span class="on2"></span><h6></h6>
+        <!-- Middle -->
+        <div class="middle">
+          <div class="hg">
+            <h2>Good Morning <span>:)</span></h2>
           </div>
-        </label>
 
-       </div>
+          <input type="radio" id="info_1" />
+          <input type="radio" id="info_2" />
+          <input type="radio" id="info_3" />
 
-      <div class="device device-2">
-        <input type="checkbox" id="c3">
-          <label id="cc3" for="c3">    
-        <div class="c1">
-         <img   src="img/fan.webp">
-          <h4>A.C</h4>
-          <span class="on"></span><h6></h6>
+          <!-- Weather Info -->
+          <div class="weather-info">
+            <!-- Details -->
+            <div class="details">
+              <div class="w-detail">
+                <i class="fas fa-cloud-sun-rain"></i>
+                <h5>Weather</h5>
+              </div>
+
+              <div class="w-detail">
+                <h2>21C</h2>
+                <h5>Heat</h5>
+              </div>
+
+              <div class="w-detail">
+                <h2>94%</h2>
+                <h5>Moisture</h5>
+              </div>
+            </div>
+            <!-- /Details -->
           </div>
-          </label>
+          <!-- /Weather Info -->
 
-
-          <input type="checkbox" id="c4">
-          <label id="cc4" for="c4">
-         <div class="c1">
-         <img src="img/wifi.webp">
-          <h4>Wi-Fi</h4>
-       <span class="off"></span>   <h6></h6>
+          <!-- Cells -->
+          <div class="cells">
+            <label for="info_1">
+              <h4>Sat</h4>
+            </label>
+            <label for="info_2">
+              <h4>Sun</h4>
+            </label>
+            <label for="info_3">
+              <h4>Mon</h4>
+            </label>
           </div>
-          </label>
-       </div>
-      </div>
-     <!-- /Devices -->
+          <!--/ Cells -->
 
-         <div class="add-device">
-             <input type="checkbox" id="check">
-            <label id="add" for="check">    
-            <i class="fas fa-plus-circle"></i>
-             <h3></h3>
-                </label>
-         </div>
-    </div>
-    <!--/Middle-->
+          <!-- Devices -->
+          <div class="devices">
+            <div class="d-master">
+              <h3>4 Devices Connected</h3>
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </div>
 
-    <!-- Menu -->
+            <!-- Device -->
+            <div class="device">
+              <input type="checkbox" id="c1" />
+              <label for="c1" id="cc1">
+                <div class="c1">
+                  <img src="img/lamp.webp" alt="" />
+                  <h4>Lamp</h4>
+                  <span class="on"></span>
+                  <h6></h6>
+                </div>
+              </label>
+
+              <input type="checkbox" id="c2" />
+              <label for="c2" id="cc2">
+                <div class="c1">
+                  <img src="img/tv.webp" alt="" />
+                  <h4>TV</h4>
+                  <span class="on2"></span>
+                  <h6></h6>
+                </div>
+              </label>
+            </div>
+            <!-- /Device -->
+
+            <!-- Device 2 -->
+            <div class="device device-2">
+              <input type="checkbox" id="c3" />
+              <label for="c3" id="cc3">
+                <div class="c1">
+                  <img src="img/fan.webp" alt="" />
+                  <h4>A.C</h4>
+                  <span class="on"></span>
+                  <h6></h6>
+                </div>
+              </label>
+
+              <input type="checkbox" id="c4" />
+              <label for="c4" id="cc4">
+                <div class="c1">
+                  <img src="img/wifi.webp" alt="" />
+                  <h4>Wi-Fi</h4>
+                  <span class="off"></span>
+                  <h6></h6>
+                </div>
+              </label>
+            </div>
+            <!-- /Device 2 -->
+          </div>
+          <!-- /Devices -->
+
+          <div class="add-device">
+            <input type="checkbox" id="check" />
+            <label for="check" id="add">
+              <i class="fas fa-plus-circle"></i>
+              <h3></h3>
+            </label>
+          </div>
+        </div>
+        <!-- /Middle -->
+
+        <!-- Menu -->
         <div class="menu">
-        <i class="fa fa-home" aria-hidden="true"></i>
+          <i class="fa fa-home" aria-hidden="true"></i>
           <label for="page-2">
-      <i class="fas fa-tachometer-alt"></i></label>
-     <i class="fas fa-chart-bar"></i>
-        <i class="fas fa-cog"></i>
+            <i class="fas fa-tachometer-alt"></i>
+          </label>
+          <i class="fas fa-chart-bar"></i>
+          <i class="fas fa-cog"></i>
+        </div>
+        <!-- /Menu -->
       </div>
-      <!-- /Menu -->
-    </div>
-  <!--/Page_1-->
+      <!-- /Page 1 -->
 
-      <input type="radio" name="pages" id="page-1">
+      <!-- Page 2 -->
+      <input type="radio" name="pages" id="page-1" />
 
-     <!-- Page 2 -->
-    <div class="page_2">
-      <!-- Top -->
-    <div class="top">
-      <label for="page-1"> <i class="fas fa-chevron-left"></i>
-      <i> <!--care-->
-    </label>
-    <label id="darklabel" for="darkmode">
-      <p class="change-mod">Dark Mode</p>
-      </label>
-    </i> <!--Care-->
-    
-     <i class="fas fa-align-right"></i>
-      </div>
-      <!-- /Top -->
+      <div class="page_2">
+        <!-- Top -->
+        <div class="top">
+          <label for="page-1">
+            <i class="fas fa-chevron-left"></i>
+            <i>
+          </label>
+          <label for="darkmode" id="darklabel">
+            <p class="change-mod">Dark Mode</p>
+          </label>
+        </i>
 
-      <!-- Middle -->
-    <div class="middle">
-      <div class="hg">
-        <h2>Climate Control</h2>
-      </div>
-      <input type="checkbox" id="cover"> 
-      <!-- Chart -->
-      <div class="chart">
-        <div class="back">
-           <div class="front">
-            <div><i class="fas fa-thermometer-quarter"></i>
-             <h2>23°c</h2>
-             </div>
-              <h4>Cold</h4>
-           </div>
+        <i class="fas fa-align-right"></i>
         </div>
-      </div>
-      <!-- Chart -->
-       
-      <!-- Buttons -->
-      <div class="buttons" style="display:flex;">
-     <div class="btn">
-       <button>-</butto>
-       </div>
-        <div class="btn-2">
-                     
-      <label id="cover-label" for="cover">
-     <i  class="fa fa-power-off" aria-hidden="true"></i>
-     </label>   
-    </div>
-    
-        
-        <div class="btn">
-       <button>+</button>
-     </div>
-        </div>
-        <!--/Buttons -->
+        <!-- /Top -->
 
-        <!-- Modes -->
-    <div class="modes">
-
-      <div class="mode">
-        <h3>Mode</h3>
-      </div>
-
-      <!-- Control -->
-      <div class="control">
-        <input name="mod"  type="radio" id="cold" checked>
-        <label for="cold">
-        <div class="mod"><i class="fas fa-snowflake"></i>
-          <h3>Cold</h3>
-        </div>
-      </label>
-        <input name="mod" type="radio" id="hot">
-        <label for="hot">
-          <div class="mod"><i class="fas fa-fire"></i>
-          <h3>Hot</h3>
-        </div>
-    </label>
-        <input name="mod" type="radio" id="fan">
-        <label for="fan">
-          <div class="mod"><i class="fas fa-fan"></i>
-          <h3>Fan</h3>
-        </div>
-        </label>
-        <input name="mod" type="radio" id="auto">
-        <label for="auto">
-          <div class="mod"><i class="fas fa-sync"></i>
-          <h3>Auto</h3>
-        </div>
-        </label>
-        <input name="mod" type="radio" id="warm">
-        <label for="warm">
-          <div class="mod"><i class="fas fa-tint"></i>
-          <h3>Warm</h3>
-        </div> 
-     </label>
+        <!-- Middle -->
+        <div class="middle">
+          <div class="hg">
+            <h2>Climate Control</h2>
           </div>
-      <!-- /Control -->
-    </div>
-    <!-- /Modes -->
-    </div>
-    <!-- /Middle -->
 
-    <!-- Menu -->
-       <div class="menu">
-         <label for="page-1">
-        <i class="fa fa-home" aria-hidden="true"></i></label>
-      <i class="fas fa-tachometer-alt"></i>
-     <i class="fas fa-chart-bar"></i>
-        <i class="fas fa-cog"></i>
+          <input type="checkbox" id="cover">
+          <!-- Chart -->
+          <div class="chart">
+            <div class="back">
+              <div class="front">
+                <div>
+                  <i class="fas fa-thermometer-quarter"></i>
+                  <h2>23C</h2>
+                </div>
+                <h4>Cold</h4>
+              </div>
+            </div>
+          </div>
+          <!-- /Chart -->
+
+          <!-- Buttons -->
+          <div class="buttons" style="display: flex;">
+            <div class="btn">
+              <button>-</button>
+            </div>
+
+            <div class="btn-2">
+              <label for="cover" id="cover-label">
+                <i class="fa fa-power-off" aria-hidden="true"></i>
+              </label>
+            </div>
+
+            <div class="btn">
+              <button>+</button>
+            </div>
+          </div>
+          <!-- /Buttons -->
+
+          <!-- Modes -->
+          <div class="modes">
+            <div class="mode">
+              <h3>Mode</h3>
+            </div>
+
+            <!-- Control -->
+            <div class="control">
+              <input type="radio" name="mod" id="cold">
+              <label for="cold">
+                <div class="mod">
+                  <i class="fas fa-snowflake"></i>
+                  <h3>Cold</h3>
+                </div>
+              </label>
+
+              <input type="radio" name="mod" id="hot">
+              <label for="hot">
+                <div class="mod">
+                  <i class="fas fa-fire"></i>
+                  <h3>Hot</h3>
+                </div>
+              </label>
+
+              <input type="radio" name="mod" id="fan">
+              <label for="fan">
+                <div class="mod">
+                  <i class="fas fa-fan"></i>
+                  <h3>Fan</h3>
+                </div>
+              </label>
+
+
+              <input type="radio" name="mod" id="auto">
+              <label for="auto">
+                <div class="mod">
+                  <i class="fas fa-sync"></i>
+                  <h3>Auto</h3>
+                </div>
+              </label>
+
+              <input type="radio" name="mod" id="warm">
+              <label for="warm">
+                <div class="mod">
+                  <i class="fas fa-tint"></i>
+                  <h3>Warm</h3>
+                </div>
+              </label>
+
+            </div>
+            <!-- /Control -->
+          </div>
+          <!--/ Modes -->
+        </div>
+        <!-- /Middle -->
+
+        <!-- Menu -->
+        <div class="menu">
+          <label for="page-1">
+            <i class="fa fa-home" aria-hidden="true"></i>
+          </label>
+          <i class="fas fa-tachometer-alt"></i>
+          <i class="fas fa-chart-bar"></i>
+          <i class="fas fa-cog"></i>
+        </div>
+        <!-- /Menu -->
       </div>
+      <!-- /Page 2-->
     </div>
-    <!-- Page_2 -->
-      </div>
   </body>
 </html>
